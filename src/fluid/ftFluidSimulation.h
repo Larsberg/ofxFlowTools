@@ -95,7 +95,7 @@ namespace flowTools {
 		void setDensityFromPressure(float value) {densityFromPressure.set(value);}
 		
 		ofParameterGroup	parameters;
-	private:
+//	private:
 		ofParameter<bool>	doReset;
 		ofParameter<float>	speed;
 		ofParameter<float>	cellSize;
@@ -120,6 +120,8 @@ namespace flowTools {
 		ofParameter<float>	densityFromPressure;
 		ofParameter<float>	densityFromVorticity;
 		
+	private:
+
 		ftDiffuseShader			diffuseShader;
 		ftAdvectShader			advectShader;
 		ftDivergenceShader		divergenceShader;
